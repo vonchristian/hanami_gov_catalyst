@@ -1,0 +1,12 @@
+<h1>Businesses</h1>
+<% if businesses.any? %>
+	<div id="businesses">
+	  <% businesses.each do |business| %>
+	    <div class="business">
+	      <h2> <%= business.name %></h2>
+	    </div>
+	  <% end %>
+	</div>
+<% else %>
+ <p class="placeholder"> There are no businesses yet. </p>
+<% end %>
