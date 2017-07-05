@@ -1,0 +1,4 @@
+project=gov_catalyst
+architecture=container
+test=rspec
+template=erb
