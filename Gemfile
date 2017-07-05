@@ -3,13 +3,11 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'hanami',       '~> 1.0'
 gem 'hanami-model', '~> 1.0'
-
 gem 'pg'
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem 'shotgun'
-  gem 'puma'
 end
 
 group :test, :development do
@@ -22,5 +20,5 @@ group :test do
 end
 
 group :production do
-  gem 'puma'
+  gem 'puma', group: :development
 end
